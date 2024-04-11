@@ -107,12 +107,12 @@ address {
   font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 123px 11px 0 39px;
+  padding: 123px 10px 0 37px;
   color: #ffffff;
 }
 
 .cover__description-text {
-  word-spacing: 0.83em;
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -122,6 +122,7 @@ address {
   align-items: center;
   border: 1px solid #ffffff;
   padding: 12px 32px 11px 31px;
+  word-spacing: 0;
 }
 
 .lots {
