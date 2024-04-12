@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
     <header class="header">
       <nav>
         <ul class="header__links-list">
-          <li class="header__links-list-item">
-            <a class="header__links-list-item-no-bullit" href="#0">главная</a>
+          <li class="header__links-list-item header__links-list-item-no-bullit">
+            <a class="header__link_active" href="">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link_active" href="">посмотреть лоты</a>
+            <a href="#0">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a class="header__link_active" href="">об аукционе</a>
+            <a href="#0">об аукционе</a>
           </li>
         </ul>
       </nav>
@@ -28,21 +28,24 @@
         <img
           class="header__logo-image"
           src="./images/logo-black.svg"
-          alt="логотип проекта оно тебе надо черный"
-        />
+          alt="логотип проекта оно тебе надо черный">
       </a>
       <address>
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a> наб. Принсенграхт 263-<br />265, Амстердам</a>
+        <p>наб. Принсенграхт 263-</p>
+        <p>265, Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
+        <div class="overlay"></div>
         <h1 class="cover__title">
-          о<span class="letter-spacing-extended">но</span>
+          <span class="aligned-text"
+            >о<span class="letter-spacing-extended">но</span>
+          </span>
           <span class="aligned-text aligned-text_center">
-            <span>тe<span class="letter-spacing-extended">бе</span></span>
+            тe<span class="letter-spacing-extended">бе</span>
           </span>
           <span class="aligned-text aligned-text_right">
             <span class="letter-spacing-extended">н</span>ад<span
@@ -51,51 +54,54 @@
             >
           </span>
         </h1>
-        <h3 class="cover__description cover__description-text">
+        <div class="cover__description cover__description-text">
           Аукцион вещей, в которые никто не верил
-          <a class="bet-button" href="#0">сделать ставку</a>
-        </h3>
+          <button class="bet-button" name="button">сделать ставку</button>
+        </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">лоты</h2>
         <ul class="lots__card-list">
-          <li class="lots__card-list-item card_type_film">
-            <a class="card-link card" href="#">
-              <article class="card__title">
+          <li class="lots__card-list-item">
+            <a class="card-link card_type_film card" href="#">
+              <div class="overlay"></div>
+              <h3 class="card__title">
                 Фильм режиссёра, который бросил киношколу
-              </article>
-              <article class="card__text">
+              </h3>
+              <p class="card__text">
                 Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </article>
+              </p>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_book">
-            <a class="card-link card" href="#">
-              <article class="card__title">
+          <li class="lots__card-list-item">
+            <a class="card-link card_type_book card" href="#">
+              <div class="overlay"></div>
+              <h3 class="card__title">
                 Книга, где описан один скучный день из жизни рекламного агента
-              </article>
-              <article class="card__text">
+              </h3>
+              <p class="card__text">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на древнеанглийский. В ней одновременно
                 рассказывается о 16 июня 1904 года и об истории литературы,
                 начиная с античных времён. И это всё накладывается на эпическую
                 поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
                 Джойса?
-              </article>
+              </p>
             </a>
           </li>
-          <li class="lots__card-list-item card_type_picture">
-            <a class="card-link card" href="#">
-              <article class="card__title">
+          <li class="lots__card-list-item">
+            <a class="card-link card_type_picture card" href="#">
+              <div class="overlay"></div>
+              <h3 class="card__title">
                 Картина, которую повторит даже 5-летний сын маминой подруги
-              </article>
-              <article class="card__text">
+              </h3>
+              <p class="card__text">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе
                 что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                 котиков... Сколько бы вы на такое поставили, если бы не знали,
                 что это — одна из революционных работ Кандинского?
-              </article>
+              </p>
             </a>
           </li>
         </ul>
@@ -103,14 +109,13 @@
       </section>
       <section class="about">
         <div class="about__column">
-          <article class="about__logo">
+          <div class="about__logo">
             <img
               class="about__logo-image"
-              src="../images/logo-white.svg"
-              alt="логотип проекта оно тебе надо белый"
-            />
-          </article>
-          <article class="about__text">
+              src="./images/logo-white.svg"
+              alt="логотип проекта оно тебе надо белый">
+          </div>
+          <div class="about__text">
             <h2 class="about__title">Об аукционе</h2>
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
@@ -128,7 +133,7 @@
               вещи не верил никто, продолжали верить их создатели. И сейчас эти
               лоты стали культовыми.
             </p>
-          </article>
+          </div>
         </div>
       </section>
     </main>
@@ -136,7 +141,8 @@
       <address>
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <a> наб. Принсенграхт 263-<br />265, Амстердам</a>
+        <p>наб. Принсенграхт 263-</p>
+        <p>265, Амстердам</p>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
@@ -154,17 +160,17 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a href="#">
-            <img src="./images/yt.svg" alt="иконка ю туб" />
+            <img src="./images/yt.svg" alt="иконка ю туб">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#">
-            <img src="./images/vk.svg" alt="иконка в контакте" />
+            <img src="./images/vk.svg" alt="иконка в контакте">
           </a>
         </li>
         <li class="footer__social-list-item">
           <a href="#">
-            <img src="./images/pinterest.svg" alt="иконка пинтерест" />
+            <img src="./images/pinterest.svg" alt="иконка пинтерест">
           </a>
         </li>
       </ul>
