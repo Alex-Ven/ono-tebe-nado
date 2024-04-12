@@ -22,7 +22,6 @@ header {
 }
 
 .header__links-list-item-no-bullit {
-  text-decoration: none;
   list-style: none;
 }
 .header__link_active {
