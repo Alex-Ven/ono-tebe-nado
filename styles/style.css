@@ -43,7 +43,8 @@ address {
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  padding-right: 62px;
+  padding-right: 49px;
+  max-width: 265px;
 }
 
 .cover {
@@ -63,6 +64,9 @@ address {
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
@@ -87,13 +91,11 @@ address {
 .aligned-text_center {
   text-align: center;
   line-height: 100%;
-  padding-top: 20px;
 }
 
 .aligned-text_right {
   text-align: right;
   line-height: 100%;
-  padding-top: 20px;
 }
 
 .cover__description {
@@ -112,7 +114,7 @@ address {
 }
 
 .bet-button {
-  font-family: "Raleway";
+  font-family: inherit;
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
@@ -255,11 +257,11 @@ address {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  padding-right: 24px;
 }
 
 .footer__menu-list {
   list-style: none;
-  padding-right: 25px;
 }
 
 .footer__menu-link_active {
